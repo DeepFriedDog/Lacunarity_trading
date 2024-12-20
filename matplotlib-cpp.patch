@@ -1,0 +1,19 @@
+﻿--- matplotlibcpp.h.orig
++++ matplotlibcpp.h
+@@ -345,16 +345,6 @@
+ template <>
+struct select_npy_type<int64_t> { const static NPY_TYPES type = NPY_INT64; };
+
+-template <>
+-struct select_npy_type<int64_t> { const static NPY_TYPES type = NPY_INT64; };
+
+-template <>
+-struct select_npy_type<uint64_t> { const static NPY_TYPES type = NPY_UINT64; };
+
+-template <>
+-struct select_npy_type<uint64_t> { const static NPY_TYPES type = NPY_UINT64; };
+
+
+ } // namespace detail
+
+ // Types -> NPY_TYPES: Specify numpy type for custom struct.
